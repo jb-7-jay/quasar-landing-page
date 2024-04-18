@@ -60,3 +60,15 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.logo-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px;
+}
+</style>
