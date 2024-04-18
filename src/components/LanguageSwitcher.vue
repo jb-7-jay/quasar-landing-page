@@ -1,5 +1,4 @@
 <template>
-  <!-- ...... -->
   <q-select
     v-model="locale"
     :options="localeOptions"
@@ -11,7 +10,6 @@
     options-dense
     style="min-width: 150px"
   />
-  <!-- ...... -->
 </template>
 
 <script>

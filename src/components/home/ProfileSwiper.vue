@@ -1,7 +1,5 @@
 <template>
-  <div class="coverflow-example">
-    <!-- <button @click="handleClick">Slide to the next slide</button> -->
-
+  <div>
     <transition
       appear
       enter-active-class="animated slower fadeIn"
@@ -28,7 +26,10 @@
         <swiper-slide class="slide" v-for="index in 8" :key="index">
           <!-- <div class="arrow">풀타임, 파트타임</div> -->
 
-          <img style="width: 120px; height: 120px" src="../assets/avatar.png" />
+          <img
+            style="width: 120px; height: 120px"
+            src="../../assets/avatar.png"
+          />
           <div class="name">
             {{ index % 2 === 0 ? 'Jolly Patel' : 'Adriana Lima' }}
           </div>
@@ -50,24 +51,20 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useSwiper } from 'swiper/vue';
-
-import { EffectCoverflow, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
 export default defineComponent({
-  name: 'swiper-example-3d-coverflow',
-  title: '3D Coverflow effect',
+  name: 'ProfileSwiper',
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
-    const slider = useSwiper();
-
     return {
       modules: [EffectCoverflow, Navigation],
     };
