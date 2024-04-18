@@ -105,7 +105,7 @@
         </transition>
       </div>
 
-      <div class="lt-sm">
+      <div class="lt-sm q-pl-md">
         <div class="row">
           <div class="row items-center q-pr-md">
             <q-checkbox v-model:model-value="isChecked" class="q-pr-sm" />
